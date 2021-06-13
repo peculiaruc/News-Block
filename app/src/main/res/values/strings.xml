@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">News BLOCK</string>
-    <string name="tab_text_2" />
-    <string name="tab_text_1" />
+    <string name="tab_text_2">SignIn</string>
+    <string name="tab_text_1">SignUp</string>
 </resources>
