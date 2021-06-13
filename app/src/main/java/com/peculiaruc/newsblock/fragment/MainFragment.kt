@@ -17,11 +17,7 @@ import com.peculiaruc.newsblock.R
 
 class MainFragment : Fragment() {
 
-//  var tabLayout: TabLayout? = null
-//    var viewPager2: ViewPager2? = null
-
-    private lateinit var tabLayout: TabLayout
-    private lateinit var viewPager2: ViewPager2
+    var titles = arrayOf("SignIn", "SignUp")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,32 +31,11 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        val fragAdapter = PagerAdapter(supportFragmentManager)
-        viewPager2?.adapter = fragAdapter
-
-        tabLayout?.setupWithViewPager(viewPager2)
-
-        //alternatvie logic
-//        TabLayoutMediator(tabLayout, viewPager2) {tab, position ->
-//            tab.text = "${position + 1}"
-//        }.attach()
-//
-//        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-//            override fun onTabSelected(tab: TabLayout.Tab?) {
-//                Toast.makeText(this@MainFragment, "Tab ${tab?.text} selected", Toast.LENGTH_SHORT).show()
-//            }
-//
-//            override fun onTabUnselected(tab: TabLayout.Tab?) {
-//                Toast.makeText(this@MainFragment, "Tab ${tab?.text} unselected", Toast.LENGTH_SHORT).show()
-//            }
-//
-//            override fun onTabReselected(tab: TabLayout.Tab?) {
-//                Toast.makeText(this@MainFragment, "Tab ${tab?.text} reselected", Toast.LENGTH_SHORT).show()
-//            }
-//        })
-
+        setupViewPage()
     }
+     private fun setupViewPage(viewPager: ViewPager2) {
+
+     }
 
 
 }
