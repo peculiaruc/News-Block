@@ -5,11 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.peculiaruc.newsblock.MainActivity
 import com.peculiaruc.newsblock.R
@@ -31,11 +27,11 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupViewPage()
+    //    setupViewPage(viewPager = setupViewPage(ViewPager))
     }
-     private fun setupViewPage(viewPager: ViewPager2) {
 
-     }
-
-
+    private fun setupViewPage(viewPager: Unit) {
+        TODO("Not yet implemented")
+    }
+    
 }
