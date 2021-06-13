@@ -16,15 +16,16 @@ class MainActivity : AppCompatActivity() {
         val viewPager: ViewPager2 = findViewById(R.id.viewpager)
         val tabLayout: TabLayout = findViewById(R.id.tablayout)
 
-        val fragAdapter  = PagerAdapter(supportFragmentManager, lifecycle)
+        val fragAdapter  = PagerAdapter(supportFragmentManager)
         viewPager.adapter = fragAdapter
 
         tabLayout.setupWithViewPager(viewPager)
+
         TabLayoutMediator(tabLayout, viewPager) {tab, position ->
             tab.text = if(position == 0) {
-                getString(R.string.tab_text_1)}
+                getString(R.string.signin)}
             else{
-                getString(R.string.tab_text_2)
+                getString(R.string.signup)
             }
         }.attach()
     }
